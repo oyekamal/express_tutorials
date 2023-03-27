@@ -1,7 +1,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 var things = require('./core/things.js');
 var app = express();
+
+app.use(cookieParser())
+
 
 //To parse URL encoded data
 app.use(bodyParser.urlencoded({ extended: false }))
