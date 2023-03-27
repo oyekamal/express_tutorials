@@ -1,8 +1,13 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var things = require('./core/things.js');
 var app = express();
 
+//To parse URL encoded data
+app.use(bodyParser.urlencoded({ extended: false }))
 
+//To parse json data
+app.use(bodyParser.json())
 app.get('/', function (req, res) {
     res.send("get api here");
 });
