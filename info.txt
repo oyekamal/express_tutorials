@@ -4,3 +4,5 @@
 4. ls node_modules #(dir node_modules for windows)
 5. npm install -g nodemon # auto restart server when we change something
 6. nodemon index.js
+
+7. npx express-generator #make a dummy files and code
